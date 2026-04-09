@@ -63,7 +63,6 @@ const Header = () => {
           </a>
         </div>
 
-        {/* Mobil Burger Menu - "Modern Minimal" */}
         <button 
           onClick={() => setIsOpen(!isOpen)} 
           className="lg:hidden z-[1100] w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 active:scale-90 transition-all"
@@ -75,7 +74,7 @@ const Header = () => {
           </div>
         </button>
 
-        {/* Mobil Menyu - "Glass Overlay" */}
+
         <div className={`fixed inset-0 bg-[#02040a]/95 backdrop-blur-3xl transition-all duration-700 lg:hidden flex flex-col items-center justify-center ${
           isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
         }`}>
@@ -85,7 +84,7 @@ const Header = () => {
                 key={link.name} 
                 href={link.href} 
                 onClick={() => setIsOpen(false)}
-                className={`text-white text-4xl font-black tracking-tighter hover:text-blue-500 transition-all transform ${
+                className={`text-white  font-black tracking-tighter hover:text-blue-500 transition-all transform ${
                   isOpen ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 style={{ transitionDelay: `${i * 100}ms` }}

@@ -1,16 +1,15 @@
-import React from "react";
 import Img from "./images/img.png";
 
 const Hero = () => {
   return (
-    <section className="relative bg-[#02040a] min-h-screen flex items-center pt-24 lg:pt-0 overflow-hidden selection:bg-blue-500/30">
+    <section className="relative bg-[#02040a] min-h-screen flex items-start pt-32 lg:pt-40 pb-20 overflow-hidden selection:bg-blue-500/30">
       
       <div className="absolute top-[-10%] right-[-5%] w-[400px] md:w-[700px] h-[400px] md:h-[700px] bg-blue-600/20 blur-[120px] md:blur-[180px] rounded-full animate-pulse"></div>
       <div className="absolute bottom-[-10%] left-[-5%] w-[350px] md:w-[600px] h-[350px] md:h-[600px] bg-purple-600/15 blur-[120px] md:blur-[180px] rounded-full opacity-50"></div>
       
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
 
-      <div className="container mx-auto px-6 lg:px-12 py-12 md:py-24 relative z-10">
+      <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-4">
           
           <div className="w-full lg:w-[58%] text-center lg:text-left order-2 lg:order-1">
@@ -60,7 +59,6 @@ const Hero = () => {
 
           <div className="w-full lg:w-[42%] flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative w-full max-w-[350px] sm:max-w-[500px] lg:max-w-full group">
-            
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity duration-1000"></div>
               
               <img 
@@ -87,7 +85,6 @@ const Hero = () => {
                  <p className="text-gray-400 text-[10px] font-bold uppercase mb-1">Threats Blocked</p>
                  <p className="text-white text-2xl font-black">99.9%</p>
               </div>
-
             </div>
           </div>
         </div>
